@@ -1,0 +1,66 @@
+/* Slow, cheap, transform-only animations (GPU friendly on phones). */
+
+@keyframes drift-a {
+  0%, 100% { transform: translate3d(-8%, -6%, 0) scale(1); }
+  50% { transform: translate3d(10%, 8%, 0) scale(1.15); }
+}
+@keyframes drift-b {
+  0%, 100% { transform: translate3d(8%, 6%, 0) scale(1.1); }
+  50% { transform: translate3d(-10%, -8%, 0) scale(0.95); }
+}
+@keyframes drift-c {
+  0%, 100% { transform: translate3d(0, 8%, 0) scale(1); }
+  50% { transform: translate3d(-6%, -10%, 0) scale(1.2); }
+}
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.07); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.045); }
+  70% { transform: scale(1); }
+}
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.95; transform: scale(1.12); }
+}
+@keyframes scroll-cue {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+.aurora-blob { position: absolute; border-radius: 9999px; will-change: transform; }
+.animate-drift-a { animation: drift-a 30s ease-in-out infinite; }
+.animate-drift-b { animation: drift-b 36s ease-in-out infinite; }
+.animate-drift-c { animation: drift-c 42s ease-in-out infinite; }
+.animate-float-slow { animation: float-slow 7s ease-in-out infinite; }
+.animate-heartbeat { animation: heartbeat 3.2s ease-in-out infinite; }
+.animate-glow-pulse { animation: glow-pulse 5s ease-in-out infinite; }
+.animate-scroll-cue { animation: scroll-cue 2.4s ease-in-out infinite; }
+
+/* Ivory letter paper */
+.paper {
+  background:
+    radial-gradient(120% 80% at 50% 0%, rgba(255, 255, 255, 0.55), transparent 60%),
+    linear-gradient(180deg, #f8efe2 0%, #f2e5d1 100%);
+  box-shadow:
+    0 30px 70px -25px rgba(0, 0, 0, 0.75),
+    inset 0 0 0 1px rgba(214, 180, 122, 0.35),
+    inset 0 0 60px rgba(214, 180, 122, 0.12);
+}
+
+/* Respect the "reduce motion" system setting */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
