@@ -32,8 +32,8 @@ export const config = {
   // Page 2 — welcome
   hero: {
     intro: 'Love you di Azhagi',
-    heading: 'In a World Full of People, My Heart Found You.',
-    text: 'Unkooda alika mudiyatha memories ennaku neraya venu di. Life full ahh unnakaga vaala aasai padaren di',
+    heading: 'Whis you happy birthday my dear Beautifull 😘 !!',
+    text: 'Intha life mudira varilum na un kooda thaan irrupen da azhagu. Mamavoda intha life unnakanathu di loose 😚💘',
     button: 'Itha thodu di !',
   },
 
@@ -53,7 +53,7 @@ export const config = {
   forever: {
     message: "Na unnoda lifela oru chapter ahh irruka virumbala. Na un lifela mulu story ahh irrukanum.",
     subMessage:
-      'En koodave irru di. unna vitta ennaku yaar di irrukanga 🥺. Nee illana ennaku sanda poda kooda aal illa papa 😭😭😭. Thaniya vitratha di 😫.',
+      'Eppovum enna situvation vanthalum mama un koodave thaan da irrupen ❤️. Nee ennoda pondati di 💕, enna thavara yaaralayum unna nalla paathuka mudiyathu 🫂. Enna vitratha papa - unnakaga thaan di naa vaalaren 💕!',
     surpriseButton: 'Itha touch pannu',
     replayButton: 'Replay our story',
     homeButton: 'Back to the welcome',

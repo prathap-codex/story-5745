@@ -60,7 +60,7 @@ export const timeline = [
     date: '2021 / 2023',
     title: 'Our School Days 💘',
     description:
-      'Apram avanga school days la two years itrrunthuchu 🥳. Antha days la avanga pesikittatha vida Romance panni ummahhh koduthathu thaan athigam 😘😘. Athula neraya cutest Movement rrunthuchu 😚',
+      'Apram avanga school days la two years irrunthuchu 🥳. Antha days la avanga pesikittatha vida Romance panni ummahhh koduthathu thaan athigam 😘😘. Athula neraya cutest Movement irrunthuchu 😚',
     image: '/images/timeline/story-05.jpg',
     imageAlt: '',
     caption: '',
